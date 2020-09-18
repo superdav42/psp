@@ -1,0 +1,126 @@
+{
+  "name": "devstone/psp",
+  "type": "project",
+  "description": "Sample wordpress bedrock install with moodle",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "moodle-plugin-db/mod_attendance",
+        "version": "2019072404",
+        "uid": 677,
+        "dist": {
+          "type": "zip",
+          "url": "https://moodle.org/plugins/download.php/3366/mod_attendance_moodle37_2019072404.zip"
+        },
+        "homepage": "https://moodle.org/plugins/attendance",
+        "require": {
+          "composer/installers": "~1.0",
+          "moodle/moodle": "^3.9.0"
+        },
+        "type": "moodle-mod",
+        "extra": {
+          "installer-name": "attendance"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "^1.8",
+    "vlucas/phpdotenv": "^4.1.8",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/wordpress": "5.5.1",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/woocommerce": "^4.5",
+    "wpackagist-plugin/wpsynchro": "^1.6.2",
+    "moodle/moodle": "^3.9",
+    "moodle-plugin-db/mod_attendance": "*",
+    "oomphinc/composer-installers-extender": "^1.1.2"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.5.6",
+    "roave/security-advisories": "dev-master"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+	          "installer-types": ["project"],
+
+	  "installer-paths": {
+		  "web/moodle": ["moodle/moodle"],
+      	    "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"],
+      "web/moodle/mod/{$name}/": ["type:moodle-mod"],
+	"web/moodle/admin/report/{$name}/": ["type:moodle-admin_report"],
+            "web/lib/editor/atto/plugins/{$name}/": ["type:moodle-atto"],
+            "web/admin/tool/{$name}/": ["type:moodle-tool"],
+            "web/mod/assignment/type/{$name}/": ["type:moodle-assignment"],
+            "web/mod/assign/submission/{$name}/": ["type:moodle-assignsubmission"],
+            "web/mod/assign/feedback/{$name}/": ["type:moodle-assignfeedback"],
+            "web/auth/{$name}/": ["type:moodle-auth"],
+            "web/availability/condition/{$name}/": ["type:moodle-availability"],
+            "web/blocks/{$name}/": ["type:moodle-block"],
+            "web/mod/book/tool/{$name}/": ["type:moodle-booktool"],
+            "web/cache/stores/{$name}/": ["type:moodle-cachestore"],
+            "web/cache/locks/{$name}/": ["type:moodle-cachelock"],
+            "web/calendar/type/{$name}/": ["type:moodle-calendartype"],
+            "web/course/format/{$name}/": ["type:moodle-format"],
+            "web/course/report/{$name}/": ["type:moodle-coursereport"],
+            "web/mod/data/field/{$name}/": ["type:moodle-datafield"],
+            "web/mod/data/preset/{$name}/": ["type:moodle-datapreset"],
+            "web/lib/editor/{$name}/": ["type:moodle-editor"],
+            "web/enrol/{$name}/": ["type:moodle-enrol"],
+            "web/filter/{$name}/": ["type:moodle-filter"],
+            "web/grade/export/{$name}/": ["type:moodle-gradeexport"],
+            "web/grade/import/{$name}/": ["type:moodle-gradeimport"],
+            "web/grade/report/{$name}/": ["type:moodle-gradereport"],
+            "web/grade/grading/form/{$name}/": ["type:moodle-gradingform"],
+            "web/local/{$name}/": ["type:moodle-local"],
+            "web/admin/tool/log/store/{$name}/": ["type:moodle-logstore"],
+            "web/mod/lti/source/{$name}/": ["type:moodle-ltisource"],
+            "web/mod/lti/service/{$name}/": ["type:moodle-ltiservice"],
+            "web/message/output/{$name}/": ["type:moodle-message"],
+            "web/mnet/service/{$name}/": ["type:moodle-mnetservice"],
+            "web/plagiarism/{$name}/": ["type:moodle-plagiarism"],
+            "web/portfolio/{$name}/": ["type:moodle-portfolio"],
+            "web/question/behaviour/{$name}/": ["type:moodle-qbehaviour"],
+            "web/question/format/{$name}/": ["type:moodle-qformat"],
+            "web/question/type/{$name}/": ["type:moodle-qtype"],
+            "web/mod/quiz/accessrule/{$name}/": ["type:moodle-quizaccess"],
+            "web/mod/quiz/report/{$name}/": ["type:moodle-quiz"],
+            "web/report/{$name}/": ["type:moodle-report"],
+            "web/repository/{$name}/": ["type:moodle-repository"],
+            "web/mod/scorm/report/{$name}/": ["type:moodle-scormreport"],
+            "web/search/engine/{$name}/": ["type:moodle-search"],
+            "web/theme/{$name}/": ["type:moodle-theme"],
+            "web/lib/editor/tinymce/plugins/{$name}/": ["type:moodle-tinymce"],
+            "web/user/profile/field/{$name}/": ["type:moodle-profilefield"],
+            "web/webservice/{$name}/": ["type:moodle-webservice"],
+            "web/mod/workshop/allocation/{$name}/": ["type:moodle-workshopallocation"],
+            "web/mod/workshop/eval/{$name}/": ["type:moodle-workshopeval"],
+            "web/mod/workshop/form/{$name}/": ["type:moodle-workshopform"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
+  }
+}
