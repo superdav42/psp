@@ -50,7 +50,7 @@
     "wpackagist-plugin/wpsynchro": "^1.6.2",
     "moodle/moodle": "^3.9",
     "moodle-plugin-db/mod_attendance": "*",
-    "oomphinc/composer-installers-extender": "^1.1.2",
+    "oomphinc/composer-installers-extender": "^2.0.0",
     "wpackagist-plugin/add-search-to-menu": "^4.5",
     "wpackagist-plugin/elementor": "^3.0",
     "yangm97/elementor-pro": "^3.0",
