@@ -1,0 +1,123 @@
+/*
+Theme Name: Astra Child
+Theme URI: https://wpastra.com/
+Template: astra
+Author: Brainstorm Force
+Author URI: https://wpastra.com/about/
+Description: Astra is fast, fully customizable &amp; beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with Schema.org code integrated and is Native AMP ready so search engines will love your site. It offers special features and templates so it works perfectly with all page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Some of the other features: # WooCommerce Ready # Responsive # RTL &amp; Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained &amp; Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and WooCommerce ready theme that you can use for building any kind of website!
+Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
+Version: 2.4.3.1588262073
+Updated: 2020-04-30 11:54:33
+
+*/
+
+/* Modification History */
+
+/* 2020-04-30 - trh - create Astra Child theme */
+/* 2020-05-01 - trh - test some overrides and new classes */
+/* 2020-10-07 - trh - new PSP 2.0 style guide */
+/* 2020-10-22 - trh - disable custom button CSS */
+
+/* *************** */
+/* OVERRIDE STYLES */
+/* *************** */
+
+/* Buttons */
+
+.zzzast-button {color: #E0E0E0 !important; background-color: #101EB0 !important;}
+.zzzast-button:hover {color: #FFFFFF !important; background-color: #101EB0 !important;}
+.zzzelementor-button {color: #E0E0E0 !important; background-color: #101EB0 !important;}
+.zzzelementor-button:hover {color: #FFFFFF !important; background-color: #101EB0 !important;}
+.search-submit {color: #E0E0E0 !important; background-color: #101EB0 !important;}
+.search-submit:hover {color: #FFFFFF !important; background-color: #101EB0 !important;}
+
+.my-folder {background-image: url('/wp-content/uploads/2020/06/folder-icon.png') !important; width:150px; height:auto;}
+
+/* ************ */
+/* EXTRA STYLES */
+/* ************ */
+
+/* Text */
+
+h1,h2,h3,h4,h5,h6,h7 {font-family: Nunito, Monserrat, Sans-Serif !important;}
+.h1,.h2,.h3,.h4,.h5,.h6,.h7 {font-family: Nunito, Monserrat, Sans-Serif !important;}
+
+.psp-black {color: #393C44;}
+.psp-white {color: #EEEEEE;}
+.psp-warn {color: #990000;}
+.psp-clear {clear: both !important;}
+.psp-float {float: left;}
+.psp-lfloat {float: left;}
+.psp-rfloat {float: right;}
+.psp-upper {text-transform: uppercase;}
+
+
+/* Boxes */
+
+.psp-pad-sml  {padding: 4px !important;}
+.psp-pad-med  {padding: 8px !important;}
+.psp-pad-lrg  {padding: 12px !important;}
+.psp-warn-box {border: 2px solid #990000 !important;}
+.psp-info-box {border: 2px solid #182d48 !important;}
+
+.psp-lil-box {height:200px !important; width:200px !important;}
+
+
+/* Primary Palette plus aliases */
+
+/* Deep Gray (Dark Gray) */
+.psp-deep-gray, .psp-dark-gray {color: #393C44;}
+.psp-deep-gray-bg, .psp-dark-gray-bg {background-color: #393C44;}
+.psp-deep-gray-box, .psp-dark-gray-box {border: 2px solid #393C44 !important;}
+
+/* Poppy (Orange) */
+.psp-poppy, .psp-orange {color: #CA5D27;}
+.psp-poppy-bg, .psp-orange-bg {background-color: #CA5D27;}
+.psp-poppy-box, .psp-orange-box {border: 2px solid #CA5D27 !important;}
+
+/* Dusty Blue (Medium Blue) */
+.psp-dusty-blue, .psp-medium-blue {color: #5999B3;}
+.psp-dusty-blue-bg, .psp-medium-blue-bg {background-color: #5999B3;}
+.psp-dusty-blue-box, .psp-medium-blue-box{border: 2px solid #5999B3 !important;}
+
+/* Secondary Palette plus aliases */
+
+/* Navy (Dark Blue) */
+.psp-navy, .psp-dark-blue {color: #123F55;}
+.psp-navy-bg, .psp-dark-blue-bg  {background-color: #123F55;}
+.psp-navy-box,.psp-dark-blue-box {border: 2px solid #123F55 !important;}
+
+/* Gold Nugget (Yellow) */
+
+.psp-gold, .psp-yellow {color: #E6B22D;}
+.psp-gold-bg, .psp-yellow-bg {background-color: #E6B22D;}
+.psp-gold-box, .psp-yellow-box {border: 2px solid #E6B22D !important;}
+
+/* Sand */
+
+.psp-sand {color: #E8D9B5;}
+.psp-sand-bg {background-color: #E8D9B5;}
+.psp-sand-box {border: 2px solid #E8D9B5 !important;}
+
+/* Tints plus aliases */
+
+/* Slate (Medium Gray) */
+.psp-slate, .psp-medium-gray {color: #55585F;}
+.psp-slate-bg, .psp-medium-gray-bg  {background-color: #55585F;}
+.psp-slate-box,.psp-medium-gray-box {border: 2px solid #55585F !important;}
+
+/* Steel (Light Gray) */
+
+.psp-steel, .psp-light-gray {color: #E6B22D;}
+.psp-steel-bg, .psp-light-gray-bg {background-color: #E6B22D;}
+.psp-steel-box, .psp-light-gray-box {border: 2px solid #E6B22D !important;}
+
+/* Sky (Light Blue) */
+
+.psp-sky, .psp-light-blue {color: #E8D9B5;}
+.psp-sky-bg, .psp-light-blue-bg {background-color: #E8D9B5;}
+.psp-sky-box, .psp-light-blue-box {border: 2px solid #E8D9B5 !important;}
+
+
+/* END OF ASTRA CHILD STYLE SHEET */
+
