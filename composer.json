@@ -163,6 +163,9 @@
     "post-root-package-install": [
       "php -r \"copy('.env.example', '.env');\""
     ],
+    "post-install-cmd": [
+      "php -r \"copy('moodle-config.php', 'web/moodle/config.php');\""
+    ],
     "test": [
       "phpcs"
     ]
