@@ -99,6 +99,7 @@ Config::define('DISALLOW_FILE_EDIT', true);
 Config::define('DISALLOW_FILE_MODS', true);
 Config::define('WP_MEMORY_LIMIT', '256M');
 Config::define('WP_CACHE', true);
+Config::define('SUPER_CACHE_SECRET', env('SUPER_CACHE_SECRET') ?: 'killcache');
 /**
  * Debugging Settings
  */

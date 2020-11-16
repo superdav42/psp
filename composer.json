@@ -164,7 +164,8 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "post-install-cmd": [
-      "php -r \"copy('moodle-config.php', 'web/moodle/config.php');\""
+      "php -r \"copy('moodle-config.php', 'web/moodle/config.php');\"",
+      "php -r \"copy('web/app/plugins/wp-super-cache/advanced-cache.php', 'web/app/plugins/advanced-cache.php');\""
     ],
     "test": [
       "phpcs"
